@@ -19,13 +19,3 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-
-# public folder
-public/
-src/
-astro.config.mjs
-package.json
-package-lock.json
-README.md
-tailwind.config.js
-tscconfig.json

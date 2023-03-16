@@ -1,0 +1,62 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+import Footer from "../components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <Footer />
+  </body>
+</html>
+<style is:global>
+  :root {
+    --accent: 142, 45, 226;
+    --accent-gradient: linear-gradient(
+      90deg,
+      rgb(var(--accent)),
+      #4a00e0 15%,
+      white 60%
+    );
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: #f6f6f6;
+  }
+  body {
+    background-size: 20px 20px;
+    background-image: linear-gradient(to right, #4b00e015 1px, transparent 1px),
+      linear-gradient(to bottom, #4b00e015 1px, transparent 1px);
+    background-position: top center;
+    image-rendering: pixelated;
+    min-height: 100vh;
+  }
+  a {
+    color: rgb(142, 45, 226) !important;
+    font-weight: 600;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .back-gradient {
+	background-image: var(--accent-gradient);
+	background-size: 600%;
+	background-position: 0%;
+  }
+</style>
