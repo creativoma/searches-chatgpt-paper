@@ -1,0 +1,28 @@
+---
+import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+
+// funcion para formatear la fecha que viene como un string así "2021-09-01"
+function formatDate(date){
+  return new Date(date).toLocaleDateString("es-ES", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+---
+
+<Layout title={frontmatter.title}>
+  <section id="markdown" class="mx-auto w-11/12 pt-10">
+    <div class="mx-auto xl:w-3/5 w-10/12 bg-white p-10 rounded-xl border  border-violet-100" >
+      <a href="/" class=" text-sm ">&lt; Back to home </a>
+      <h2 class="text-gradient text-4xl font-bold mb-2 mt-5">
+        {frontmatter.title}
+      </h2>
+      <p>{formatDate(frontmatter.date)}</p>
+      <br>
+      <slot />
+    </div>
+  </section>
+</Layout>
