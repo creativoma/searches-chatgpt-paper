@@ -1,10 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+
+const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
 <Layout title="Searches chatGPT Paper">
   <section class="flex flex-wrap gap-10 mt-10 justify-center">
-    <Card url="astro-in-brief"/>
+    {
+      allPosts.map((post) => (
+        <Card
+          url={post.frontmatter.url}
+          title={post.frontmatter.title}
+          date={post.frontmatter.date}
+          desc={post.frontmatter.desc}
+        />
+      ))
+    }
   </section>
 </Layout>

@@ -68,10 +68,12 @@ import Footer from "../components/Footer.astro";
     border-radius: 12px;
     padding: 20px;
     background: #2a2c38 !important;
+    width: 100%;
+    white-space: pre-wrap;
   }
 
   #markdown h3{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     line-height: 1em;
     padding: 10px 0;
@@ -85,5 +87,26 @@ import Footer from "../components/Footer.astro";
     text-align: justify;
   }
 
+  #markdown p.date{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding: 10px 0;
+    text-align: justify;
+  }
+  #markdown h3.globePregunta {
+    padding: 15px 30px;
+    border-radius: 0px 30px 30px 30px;
+    background-color: #bce4f7;
+    width: max-content;
+    margin: 0 auto 0 0;
+  } 
   
+  #markdown h3.globeRespuesta {
+    padding: 15px 30px;
+    border-radius: 0px 30px 30px 30px;
+    background-color: #a8ec73;
+    width: max-content;
+    margin: 0 auto 0 0;
+  }  
 </style>

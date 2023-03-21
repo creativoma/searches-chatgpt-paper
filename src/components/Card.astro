@@ -1,11 +1,20 @@
 ---
-const url = Astro.props.url;
+const { url, title, desc } = Astro.props;
 ---
 
 <div class="card" style="backdrop-filter: blur(1px); background: #ffffff3d;">
   <div class="card-body">
-    <h2 class="card-header">Maximizing Your Productivity at Work</h2>
-    <p class="text-content2">Are you looking to increase your productivity at work?</p>
+    <h2 class="card-header">{title}</h2>
+    <p
+      class="text-content2"
+      style="display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;"
+    >
+      {desc}
+    </p>
     <div class="card-footer">
       <button url-post={url} class="btn-secondary btn back-gradient">Leer más</button>
     </div>
@@ -13,12 +22,14 @@ const url = Astro.props.url;
 </div>
 
 <script>
-  const btnPost = document.querySelector('[url-post]');
+  const btnPosts = document.querySelectorAll("[url-post]");
 
-  btnPost.addEventListener('click', (event) => {
+  btnPosts.forEach((element) => {
+    element.addEventListener("click", (event) => {
       event.preventDefault();
-      const url = btnPost.getAttribute('url-post');
-      window.location.href = '/post/' + url;
+      const url = element.getAttribute("url-post");
+      window.location.href = 'posts' +url;
+    });
   });
 </script>
 
