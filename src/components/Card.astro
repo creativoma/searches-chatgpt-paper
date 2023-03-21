@@ -7,16 +7,18 @@ const url = Astro.props.url;
     <h2 class="card-header">Maximizing Your Productivity at Work</h2>
     <p class="text-content2">Are you looking to increase your productivity at work?</p>
     <div class="card-footer">
-      <button url-post class="btn-secondary btn back-gradient">Leer más</button>
+      <button url-post={url} class="btn-secondary btn back-gradient">Leer más</button>
     </div>
   </div>
 </div>
 
 <script>
-    const btnPost = document.querySelector('[url-post]');
+  const btnPost = document.querySelector('[url-post]');
 
-    btnPost.addEventListener('click', (url) => {
-        window.location.href = '/post/'+url;
-    });
+  btnPost.addEventListener('click', (event) => {
+      event.preventDefault();
+      const url = btnPost.getAttribute('url-post');
+      window.location.href = '/post/' + url;
+  });
 </script>
 
