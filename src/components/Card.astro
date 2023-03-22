@@ -16,20 +16,8 @@ const { url, title, desc } = Astro.props;
       {desc}
     </p>
     <div class="card-footer">
-      <button url-post={url} class="btn-secondary btn back-gradient">Leer más</button>
+      <button url-post={url} class="btn-secondary btn back-gradient" onclick="window.location.href = '/posts' + this.getAttribute('url-post');">Read More</button>
     </div>
   </div>
 </div>
-
-<script>
-  const btnPosts = document.querySelectorAll("[url-post]");
-
-  btnPosts.forEach((element) => {
-    element.addEventListener("click", (event) => {
-      event.preventDefault();
-      const url = element.getAttribute("url-post");
-      window.location.href = '/posts' +url;
-    });
-  });
-</script>
 

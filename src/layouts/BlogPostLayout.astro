@@ -18,9 +18,8 @@ function formatDate(date) {
     <div
       class="mx-auto xl:w-3/5 w-10/12 bg-white p-10 rounded-xl border border-violet-100"
     >
-      <!-- <a href="/">
-      <span class="badge bg-violet-800 text-white font-normal pl-4 pr-4 pt-2 pb-2">Back to home</span></a> -->
-      <button class="btn-secondary btn back-gradient btn-back">Back to home</button>
+      <button class="btn-secondary btn back-gradient btn-back" onclick="window.history.back()">
+        Volver</button>
       <h2 class="text-gradient text-4xl font-bold mb-0 mt-5">
         {frontmatter.title}
       </h2>
@@ -29,20 +28,4 @@ function formatDate(date) {
       <slot />
     </div>
   </section>
-  <script>
-    const encabezadosH3 = document.querySelectorAll("h3");
-    encabezadosH3.forEach((h3) => {
-      if (h3.innerHTML == "Respuesta") {
-        h3.setAttribute("class", "globeRespuesta");
-      } else {
-        h3.setAttribute("class", "globePregunta");
-      }
-    });
-
-  const btnBack = document.querySelector(".btn-back");
-  btnBack.addEventListener("click", (event) => {
-      event.preventDefault();
-      window.location.href = '/';
-  });
-  </script>
 </Layout>

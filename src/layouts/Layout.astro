@@ -112,3 +112,13 @@ import Footer from "../components/Footer.astro";
     margin: 20px auto 0 0;
   }  
 </style>
+<script>
+  const encabezadosH3 = document.querySelectorAll("h3");
+    encabezadosH3.forEach((h3) => {
+      if (h3.innerHTML == "Respuesta") {
+        h3.setAttribute("class", "globeRespuesta");
+      } else {
+        h3.setAttribute("class", "globePregunta");
+      }
+    });
+</script>
