@@ -38,11 +38,12 @@ function formatDate(date) {
         h3.setAttribute("class", "globePregunta");
       }
     });
-
+    window.addEventListener("onload", () => {
   const btnBack = document.querySelector(".btn-back");
   btnBack.addEventListener("click", (event) => {
       event.preventDefault();
       window.location.href = '/';
   });
+});
   </script>
 </Layout>
