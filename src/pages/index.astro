@@ -6,7 +6,7 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
 <Layout title="Searches chatGPT Paper">
-  <section class="flex flex-wrap gap-10 mt-10 justify-center">
+  <section class="flex flex-wrap gap-6 mt-10 justify-center">
     {
       allPosts.map((post) => (
         <Card

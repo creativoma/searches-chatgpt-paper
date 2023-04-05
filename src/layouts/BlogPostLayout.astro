@@ -4,7 +4,7 @@ import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 
 // funcion para formatear la fecha que viene como un string así "2021-09-01"
-function formatDate(date) {
+function formatDate(date: any) {
   return new Date(date).toLocaleDateString("es-ES", {
     year: "numeric",
     month: "long",
