@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Searches chatGPT Paper and returns the results">
+    <meta name="keywords" content="HTML, CSS, javaScript, js, astro, gradients, tailwind, tabler-icons, astrobuild, rippleui">
+    <meta name="author" content="Creativoma">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Métodos de Pupeeteer más utilizados</title>
+  <link rel="stylesheet" href="/_astro/404.cb299b1a.css" />
+<link rel="stylesheet" href="/_astro/arquitectura-microservicios.9a886f52.css" /><script type="module">const t=document.querySelectorAll("h3");t.forEach(e=>{e.innerHTML=="Respuesta"?e.setAttribute("class","globeRespuesta"):e.setAttribute("class","globePregunta")});
+</script></head>
+  <body>
+    <header class="mx-auto w-11/12 pt-10">
+  <h1 class="text-gradient text-6xl font-bold mb-1 text-center">
+    Searches chatGPT Paper
+  </h1>
+  <p class="mx-auto xl:w-2/3 w-10/12 mt-5 text-center">
+    Proyecto personal que tiene como objetivo documentar y compartir las
+    búsquedas más interesantes y relevantes que he realizado con chatGPT.
+    El proyecto es un paper web en el que de manera progresiva se irán
+    documentando dichas búsquedas para que no se pierdan.
+  </p>
+  <p class="text-center">
+    by <a class="link link-primarytext-gradient" href="https://github.com/creativoma">@creativoma</a>
+  </p>
+</header>
+    <section id="markdown" class="mx-auto w-11/12 pt-10">
+    <div class="mx-auto xl:w-3/5 w-10/12 bg-white p-10 rounded-xl border border-violet-100">
+      <button class="btn-secondary btn back-gradient btn-back" onclick="window.history.back()">
+        Volver</button>
+      <h2 class="text-gradient text-4xl font-bold mb-0 mt-5">
+        Métodos de Pupeeteer más utilizados
+      </h2>
+      <p class="text-4xl date">6 de abril de 2023</p>
+      <br>
+      <h3 id="pregunta">Pregunta</h3>
+<p>Haz una lista de los métodos de Puppeteer más utilizados.</p>
+<h3 id="respuesta">Respuesta</h3>
+<p>Puppeteer es una biblioteca de Node.js que proporciona una API de alto nivel para controlar Chrome o Chromium a través del protocolo de depuración de Chrome. A continuación, se presentan algunos de los métodos más utilizados en Puppeteer:</p>
+<ul>
+<li>puppeteer.launch(): Este método se utiliza para iniciar una nueva instancia de Chromium. También se pueden especificar diferentes opciones de configuración para la instancia de Chromium.</li>
+<li>browser.newPage(): Este método se utiliza para crear una nueva página en la instancia de Chromium. Se pueden realizar diferentes operaciones en la página recién creada, como navegar a una URL, interactuar con elementos de la página, etc.</li>
+<li>page.goto(url): Este método se utiliza para navegar a una URL específica en la página actual.</li>
+<li>page.click(selector): Este método se utiliza para hacer clic en un elemento específico de la página. El elemento se selecciona utilizando un selector CSS.</li>
+<li>page.type(selector, text): Este método se utiliza para escribir texto en un elemento específico de la página. El elemento se selecciona utilizando un selector CSS.</li>
+<li>page.waitForSelector(selector): Este método se utiliza para esperar a que un elemento específico esté presente en la página. El elemento se selecciona utilizando un selector CSS.</li>
+<li>page.evaluate(() => { … }): Este método se utiliza para ejecutar código JavaScript en el contexto de la página actual. El código puede acceder a los elementos de la página y realizar diferentes operaciones.</li>
+<li>page.screenshot(): Este método se utiliza para tomar una captura de pantalla de la página actual.</li>
+<li>page.pdf(): Este método se utiliza para generar un archivo PDF de la página actual.</li>
+<li>page.setViewport(viewport): Este método se utiliza para establecer las dimensiones de la ventana gráfica de la página.</li>
+</ul>
+<p>Estos son solo algunos de los métodos más utilizados en Puppeteer. La biblioteca proporciona una gran cantidad de métodos adicionales para controlar y manipular el navegador.</p>
+<h3 id="pregunta-1">Pregunta</h3>
+<p>Perfecto, ¿puedes ampliar la lista con 10 métodos más?</p>
+<h3 id="respuesta-1">Respuesta</h3>
+<p>¡Por supuesto! Aquí hay 10 métodos adicionales en Puppeteer:</p>
+<p>page.waitForNavigation(): Este método se utiliza para esperar a que se complete una navegación en la página actual. Puede ser útil para esperar a que se cargue una nueva página después de hacer clic en un enlace o enviar un formulario.</p>
+<ul>
+<li>
+<p>page.goBack(): Este método se utiliza para navegar hacia atrás en el historial de navegación de la página.</p>
+</li>
+<li>
+<p>page.reload(): Este método se utiliza para recargar la página actual.</p>
+</li>
+<li>
+<p>page.setRequestInterception(enabled): Este método se utiliza para habilitar o deshabilitar la interceptación de solicitudes de red en la página actual. La interceptación de solicitudes puede ser útil para simular diferentes escenarios de red, como retrasos en la red, errores de red, etc.</p>
+</li>
+<li>
+<p>page.on(event, callback): Este método se utiliza para registrar un controlador de eventos para diferentes eventos en la página actual, como eventos de navegación, eventos de red, etc.</p>
+</li>
+<li>
+<p>page.authenticate(credentials): Este método se utiliza para autenticar la página actual con credenciales de autenticación básica.</p>
+</li>
+<li>
+<p>page.setExtraHTTPHeaders(headers): Este método se utiliza para establecer encabezados HTTP adicionales para las solicitudes de red en la página actual.</p>
+</li>
+<li>
+<p>page.emulate(options): Este método se utiliza para emular diferentes dispositivos y entornos en la página actual, como dispositivos móviles, tabletas, etc.</p>
+</li>
+<li>
+<p>page.keyboard.press(key): Este método se utiliza para simular una pulsación de tecla en el teclado de la página actual.</p>
+</li>
+<li>
+<p>page.mouse.click(x, y): Este método se utiliza para hacer clic en una posición específica en la página actual utilizando el mouse virtual.</p>
+</li>
+</ul>
+<p>Estos son solo algunos de los métodos adicionales disponibles en Puppeteer. La biblioteca proporciona muchas más funciones para realizar diferentes tareas en el navegador.</p>
+    </div>
+  </section>
+    <footer class="footer footer-center p-10 text-base-content">
+  <div class="my-5 text-center flex flex-col justify-center gap-5 items-center sm:flex-row">
+    <p>
+      Copyright © 2023 by <a class="link link-primary text-gradient" href="https://github.com/creativoma/searches-chatgpt-paper">@creativoma</a>
+    </p>
+    <div class="flex gap-5">
+      <a href="https://github.com/creativoma/" target="_blank" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z"></path>
+          <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+        </svg>
+      </a>
+      <a href="https://twitter.com/dev_creativoma" target="_blank" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"></path>
+        </svg></a>
+      <a href="https://www.linkedin.com/in/ma-marianoalvarez/" target="_blank" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+          <path d="M8 11l0 5"></path>
+          <path d="M8 8l0 .01"></path>
+          <path d="M12 16l0 -5"></path>
+          <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+        </svg></a>
+    </div>
+  </div>
+</footer>
+  
+</body></html>

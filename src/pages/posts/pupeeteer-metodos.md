@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogPostLayout.astro
-title: Métodos de Puppeteer más utilizados
-url: /puppeteer-metodos
-desc: Puppeteer es una biblioteca de Node.js que proporciona una API de alto nivel para controlar Chrome o Chromium. En este post te muestro los métodos de Puppeteer más utilizados.
+title: Métodos de Pupeeteer más utilizados
+url: /pupeeteer-metodos
+desc: Pupeeteer es una biblioteca de Node.js que proporciona una API de alto nivel para controlar Chrome o Chromium. En este post te muestro los métodos de Puppeteer más utilizados.
 date: 2023-04-06
 --- 
 
