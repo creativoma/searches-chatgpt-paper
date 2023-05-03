@@ -2,7 +2,7 @@
 layout: ../../layouts/BlogPostLayout.astro
 title: Cambiar el color de un solido AE
 url: /solid-color-change-ae
-desc: Tengo un solido creado y necesito cambiar su color.
+desc: Tengo un solido creado en After Effect y necesito cambiar su color.
 date: 2023-05-03
 --- 
 
